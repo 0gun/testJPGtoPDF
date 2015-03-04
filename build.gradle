@@ -1,0 +1,25 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 8
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.kibnet.jtp"
+        minSdkVersion 8
+        targetSdkVersion 8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile files('libs/andpdfviewer.jar')
+    compile files('libs/iText_PDF_For_Android_0.1.jar')
+    compile files('libs/Micro_PJAWT.jar')
+}

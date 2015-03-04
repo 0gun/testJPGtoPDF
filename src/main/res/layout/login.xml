@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/login"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="0">
+		<TextView
+			android:id="@+id/join_title"
+			android:text="@string/title_login"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/title_blank"
+			android:layout_gravity="top"
+			android:gravity="center"
+			android:textColor="@drawable/white"
+			android:textSize="20sp"
+			android:textStyle="bold"/>
+	</LinearLayout>  
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical" >
+
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="30dp"
+	        android:orientation="vertical" >
+
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+
+	            <TextView
+	                android:layout_width="65dp"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="35dp"
+	                android:layout_marginTop="23dp"
+	                android:text="@string/ID"
+	                android:textColor="@drawable/white" />
+
+	            <EditText
+	                android:id="@+id/user_id"
+	                android:layout_width="143dp"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="15dp"
+	                android:layout_marginTop="23dp"
+	                android:autoText="false"
+	                android:cursorVisible="false"
+	                android:imeOptions="actionNext"
+	                android:singleLine="true"
+	                android:textColor="#8392d1"
+	                android:textColorHint="#8392d1"
+	                android:textSize="12sp" />
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+
+	            <TextView
+	                android:layout_width="65dp"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="35dp"
+	                android:layout_marginTop="5dp"
+	                android:text="@string/PW"
+	                android:textColor="@drawable/white" />
+
+	            <EditText
+	                android:id="@+id/user_pass"
+	                android:layout_width="143dp"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="15dp"
+	                android:layout_marginTop="5dp"
+	                android:password="true"
+	                android:singleLine="true"
+	                android:textColor="#8392d1"
+	                android:textColorHint="#8392d1"
+	                android:textSize="12sp" />
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:orientation="horizontal" >
+
+	            <Button
+	                android:id="@+id/login_btn"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                 android:layout_marginTop="30dp"
+	                android:text="@string/title_login" />
+
+	        </LinearLayout>
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_marginTop="25dp" >
+	    </LinearLayout>
+
+	    <ProgressBar
+	        android:id="@+id/loading_progress"
+	        style="?android:attr/progressBarStyleInverse"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:background="@drawable/transparent_background"
+	        android:visibility="gone" />
+	</LinearLayout>
+	
+</LinearLayout>
